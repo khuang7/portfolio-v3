@@ -19,12 +19,14 @@ const { datePeriod, jobTitle, jobDescription, jobImageSrc } = Astro.props;
         <div>
           <div class="mt-4">
             <div class="sm:max-w-2xl">
-              <div class="flex items-end gap-4 border-b-2 border-black py-4">
+              <div
+                class="flex md:flex-row flex-col items-start md:items-end gap-4 border-b-2 border-black py-4"
+              >
                 <h1 class="text-2xl font-bold tracking-tight sm:text-2xl py-4">
                   {jobTitle}
                 </h1>
                 <img
-                  class="p-4 bg-yellow-500 border-black border-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-lg relative h-12 w-40 lg:h-28 lg:w-60"
+                  class="p-4 bg-yellow-500 border-black border-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-lg relative h-20 w-40 lg:h-28 lg:w-60"
                   src={jobImageSrc}
                   alt="OnSolution Webpage"
                 />
