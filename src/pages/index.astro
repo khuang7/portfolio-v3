@@ -1,0 +1,29 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Hero from "~/components/Hero.astro";
+import Marquee from "~/components/Marquee.astro";
+import PastExperienceFeed from "~/components/PastExperienceFeed.astro";
+import PastExperienceCTA from "~/components/PastExperienceCTA.astro";
+import FrontPageMarquee from "~/components/FrontPageMarquee.astro";
+
+// inspo for neobrutlist design
+// https://github.com/eliancodes/brutal
+// https://neobrutalism-components.vercel.app/docs/components/Card
+// https://neo-brutalism-ui-library.vercel.app/components/dropdown
+// https://github.com/onwidget/astrowind/blob/main/tailwind.config.cjs
+
+// TODO: tech stack stuff in projects page
+// Add socials + resume
+// add a footer
+---
+
+<Layout>
+  <Hero
+    title="<HelloWorld />"
+    message="👋 My name is Kevin Huang. I write code"
+  />
+  <FrontPageMarquee />
+  <div class="h-1 my-16 w-full bg-black"></div>
+  <PastExperienceCTA />
+  <PastExperienceFeed />
+</Layout>

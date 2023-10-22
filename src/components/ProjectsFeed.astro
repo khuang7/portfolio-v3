@@ -1,0 +1,21 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import Layout from '~/components/Layout.astro'
+import ImageCard from '~/components/ImageCard.astro'
+
+const projects = (await getCollection("project")).sort(
+  (a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf()
+);
+
+---
+<div class='grid grid-cols-2 w-full gap-8'>
+  {
+    projects.map((project) => (
+      <div key={project.id}>
+        <ImageCard title={project.data.title} message={project.data.description} imageUrl={project.data.img} slug={project.slug}/>
+      </div>
+    ))
+  }
+</div>
+
+

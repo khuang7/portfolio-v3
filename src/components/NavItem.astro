@@ -1,0 +1,21 @@
+---
+const { title, message, href } = Astro.props;
+---
+
+<div class="group">
+  <div class="flex flex-col gap-4">
+    <a
+      href={href}
+      aria-haspopup="listbox"
+      class="flex w-[200px] cursor-pointer items-center rounded-md border-2 border-black bg-yellow-500 px-7 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
+    >
+      <div class="mx-auto flex items-center">{title}</div>
+    </a>
+    <div
+      role="listbox"
+      class="bg-white absolute top-[100px] w-[200px] rounded-md border-2 border-black text-center font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hidden group-hover:flex z-10 p-4"
+    >
+      {message}
+    </div>
+  </div>
+</div>

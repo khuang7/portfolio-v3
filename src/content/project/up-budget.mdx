@@ -1,0 +1,59 @@
+---
+title: Up Budget Banking App
+publishDate: 2019-12-01 00:00:00
+img: src/assets/UpBankingAppScreenshot.png
+img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+description: |
+  Up banking API integrated with a NextJs Frontend to simply display budget data.
+tags:
+  - Up Banking
+  - Finance
+  - Budget Control
+  - NextJS
+link: https://up-banking-web.vercel.app/home
+---
+
+import Title from "~/components/markdown-components/Title.astro";
+import Paragraph from "~/components/markdown-components/Paragraph.astro";
+import Image from "~/components/markdown-components/Image.astro";
+import ImageLink from "~/components/markdown-components/ImageLink.astro";
+
+<Title text="Up Banking Budget App" />
+
+<ImageLink
+  imageSrc="../src/assets/UpBankingAppScreenshot.png"
+  imageAlt="Up banking screenshot"
+  to={"https://up-banking-web.vercel.app/home"}
+/>
+
+<Paragraph
+  text={
+    "An app that allows a user to enter their API Key, and get a web view of all their accounts and transactions."
+  }
+/>{" "}
+
+<Paragraph
+  text={
+    "Users are prompted to enter their specific API key for their account which is stored in local storage"
+  }
+/>
+
+<Paragraph
+  text={
+    "After entering an API Key users are then able to view their accounts and transaction data. (New features coming soon!)"
+  }
+/>
+
+<Image
+  imageSrc="../src/assets/UpBankingScreenshot3.png"
+  imageAlt="Up banking screenshot3"
+/>
+<b> Accounts - A overview level of all the accounts </b>
+
+<Image
+  imageSrc="../src/assets/UpBankingScreenshot4.png"
+  imageAlt="Up banking screenshot4"
+/>
+<b> Transactions - A tabulated table displaying all money flow. </b>
+
+<Paragraph text={"... and more features coming soon!"} />

@@ -1,0 +1,14 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Hero from "~/components/Hero.astro";
+import ProjectsFeed from "~/components/ProjectsFeed.astro";
+---
+
+<Layout>
+  <Hero
+    title="<PastProjects />"
+    message="Just some things I work on on the side"
+    hideCta={true}
+  />
+  <ProjectsFeed />
+</Layout>

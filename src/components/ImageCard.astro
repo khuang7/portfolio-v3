@@ -1,0 +1,18 @@
+---
+import type { CollectionEntry } from 'astro:content';
+const { title, message,imageUrl, slug} = Astro.props;
+
+
+
+---
+
+
+<figure class="w-full overflow-hidden rounded-xl border-2 border-black bg-rose-500 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]  transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none cursor-pointer ">
+  <a href={`projects/${slug}`}>
+  <img class="w-full h-60" src={imageUrl} alt="image" />
+  <figcaption class="border-t-2 border-black p-4 flex flex-col gap-2">
+    <span>{title}</span>
+    <span class='text-black font-medium'>{message}</span>
+  </figcaption>
+  <a/>
+</figure>

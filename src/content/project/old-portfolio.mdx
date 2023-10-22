@@ -1,0 +1,45 @@
+---
+title: My Old Portfolio
+publishDate: 2019-12-01 00:00:00
+img: src/assets/OldPortfolioScreenshot.png
+img_alt: A bright pink sheet of paper used to wrap flowers curves in front of rich blue background
+description: |
+  My first ever React Project and portfolio. Most of my side projects/university projects from the old days are here
+tags:
+  - Portfolio
+  - v1
+  - subdomain
+link: https://old.kevh.dev/
+---
+
+import Title from "~/components/markdown-components/Title.astro";
+import Paragraph from "~/components/markdown-components/Paragraph.astro";
+import Image from "~/components/markdown-components/Image.astro";
+import ImageLink from "~/components/markdown-components/ImageLink.astro";
+
+<Title text={"My Old Portfolio (with some of my old projects)"} />
+
+<ImageLink
+  imageSrc={"../src/assets/OldPortfolioScreenshot.png"}
+  imageAlt="Old Portfolio Screenshot"
+  to={"https://old.kevh.dev/"}
+/>
+
+<Paragraph
+  text={
+    "This is my old portfolio. As you can see the current portfolio is quite an upgrade design wise! However I am still proud of this website because it was one of the first React projects I ever made."
+  }
+/>
+
+<Paragraph
+  text={
+    "You can view some of the older apps I made during my time in University and side projects. For example:"
+  }
+/>
+
+<ul class="text-lg font-medium list-disc list-inside">
+  <li> A personal blog </li>
+  <li>Deadline management system</li>
+  <li>Heart Disease Predictor (using data science)</li>
+  <li>A social media clone</li>
+</ul>

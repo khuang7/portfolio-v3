@@ -1,0 +1,50 @@
+---
+type SvgInHtml = SVGElement;
+
+export interface MarqueeItem {
+  text: string;
+  svgElement: string;
+}
+
+interface Props {
+  items: MarqueeItem[];
+}
+const { items } = Astro.props;
+import type { string } from "astro/zod";
+import Pill from "~/components/Pill.astro";
+---
+
+<div
+  class="relative flex w-full overflow-x-hidden border-2 border-slate-600 bg-rose-500 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] rounded-3xl"
+>
+  <div class="py-12 animate-marquee whitespace-nowrap">
+    {
+      items.map((item) => {
+        return (
+          <span class="mx-4 px-4 text-4xl inline-flex border-2 border-black rounded-3xl bg-yellow-500 py-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            {item.text}
+          </span>
+        );
+      })
+    }
+  </div>
+
+  <div class="absolute top-0 py-12 animate-marquee2 whitespace-nowrap">
+    {
+      items.map((item) => {
+        return (
+          <span class="mx-4 px-4 text-4xl inline-flex border-2 border-black rounded-3xl bg-yellow-500 py-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+            {item.text}
+          </span>
+        );
+      })
+    }
+  </div>
+
+  {/* must have both of there in order to work */}
+</div>
+
+<!-- <span class="inline-flex items-center gap-2">
+  <img class="h-10 w-10" src={item.svgElement} alt="" />
+  {item.text}
+</span> -->

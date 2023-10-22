@@ -1,0 +1,23 @@
+---
+import Layout from "~/layouts/Layout.astro";
+import Hero from "~/components/Hero.astro";
+import MyPortrait from "~/components/MyPortrait.astro";
+import AboutMeSection from "~/components/AboutMeSection.astro";
+
+// inspo for neobrutlist design
+// https://github.com/eliancodes/brutal
+// https://neobrutalism-components.vercel.app/docs/components/Card
+// https://neo-brutalism-ui-library.vercel.app/components/dropdown
+// https://github.com/onwidget/astrowind/blob/main/tailwind.config.cjs
+
+// TODO: tech stack stuff in projects page
+---
+
+<Layout>
+  <Hero title="<AboutMe />" message="I do more than write code" hideCta>
+    <div class="mt-8">
+      <MyPortrait />
+    </div>
+  </Hero>
+  <AboutMeSection />
+</Layout>

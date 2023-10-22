@@ -1,0 +1,38 @@
+---
+title: Cat Clicker
+publishDate: 2019-10-02 00:00:00
+img: src/assets/CatClickerApp.png
+img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+description: |
+  Cat Superiority
+tags:
+  - Cats
+  - Simple App
+  - No Dogs
+link: https://cat-clicker-kappa.vercel.app/
+---
+
+import Title from "~/components/markdown-components/Title.astro";
+import Paragraph from "~/components/markdown-components/Paragraph.astro";
+import Image from "~/components/markdown-components/Image.astro";
+import ImageLink from "~/components/markdown-components/ImageLink.astro";
+
+<Title text="Cat Clicker App" />
+
+<ImageLink
+  imageSrc={"../src/assets/CatClickerApp.png"}
+  imageAlt={"Cat Clicker App Screenshot"}
+  to={"https://cat-clicker-kappa.vercel.app/"}
+/>{" "}
+
+<Paragraph
+  text={
+    "It actually turns out that the world is quite split when it comes to whether they prefer cats or dogs. However in Australia, dogs are the preferred animals over cats."
+  }
+/>
+
+<Paragraph
+  text={
+    "Personally I own a cat and they are great as well. Hence to show the cuteness of cats, the cat clicker app. A reminder to show that cats also deserve a place in the spotlight."
+  }
+/>

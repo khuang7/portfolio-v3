@@ -1,0 +1,38 @@
+---
+title: Blog
+publishDate: 2019-10-02 00:00:00
+img: src/assets/kevh-docs-title-screen.png
+img_alt: Blog Website Image
+description: |
+  Thoughts as a developer
+tags:
+  - Blog
+  - Notion
+  - Thoughts
+link: http://docs.kevh.dev
+---
+
+import Title from "~/components/markdown-components/Title.astro";
+import Paragraph from "~/components/markdown-components/Paragraph.astro";
+import Image from "~/components/markdown-components/Image.astro";
+import ImageLink from "~/components/markdown-components/ImageLink.astro";
+
+<Title text="My Personal Blog" />
+
+<ImageLink
+  imageSrc={`../src/assets/kevh-docs-title-screen.png`}
+  imageAlt={"My Personal Blog Screenshot"}
+  to={"http://docs.kevh.dev"}
+/>
+
+<Paragraph
+  text={
+    "This blog is a collection of my thoughts as a developer. I write about my experiences and thoughts as I go through my journey as a developer. Also some quick snippet guides which I hope will help someone in the future"
+  }
+/>
+
+<Paragraph
+  text={
+    "This blog was built using Notion's API and Astro mdx. This blog uses SSG from NextJs to build the blog on build time which creates a very nice performant blog! (overkill for a blog maybe?)"
+  }
+/>
