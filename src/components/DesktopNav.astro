@@ -1,0 +1,29 @@
+---
+import NavItem from "./NavItem.astro";
+---
+
+<nav>
+  <div class="flex items-center gap-8">
+    <div class="mr-auto items-start text-left text-sm font-bold text-black">
+      <a href="/"> kevh.dev // kevin huang</a>
+    </div>
+    <div class="flex space-x-4 mx-auto">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <NavItem
+        title="Home"
+        message="View a simple summary of my portfolio"
+        href="/"
+      />
+      <NavItem
+        title="Projects"
+        message="View some of the projects I have been working on in my spare time"
+        href="/projects"
+      />
+      <NavItem
+        title="About"
+        message="Get to know me a bit better! and hit me up anytime if you need help building a website :)"
+        href="/aboutme"
+      />
+    </div>
+  </div>
+</nav>

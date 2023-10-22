@@ -1,0 +1,51 @@
+---
+const optionClassName =
+  "block w-full border-b-2 border-black bg-white px-7 py-3 first:rounded-t-[5px] last:rounded-b-[5px] hover:bg-yellow-500";
+---
+
+<div class="flex items-center">
+  <div class="mr-auto items-start text-left text-sm font-bold text-black">
+    <a href="/"> kevh.dev // kevin huang</a>
+  </div>
+  <div class="custom-dropdown ml-auto">
+    <div
+      class="flex w-[200px] cursor-pointer items-center rounded-md border-2 border-black bg-yellow-500 px-7 py-3 font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all hover:translate-x-[3px] hover:translate-y-[3px] hover:shadow-none"
+      id="dropdownButton"
+    >
+      Menu
+    </div>
+    <div
+      class="absolute mt-4 rounded-md border-2 border-black text-center font-bold shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all w-[200px] z-10"
+      id="dropdownContent"
+    >
+      <div class="flex flex-col">
+        <a class={optionClassName} href="/">Home</a>
+        <a class={optionClassName} href="/projects">Projects</a>
+        <a class={optionClassName} href="/aboutme">About</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const dropdownButton = document.getElementById("dropdownButton");
+  const dropdownContent = document.getElementById("dropdownContent");
+
+  if (dropdownButton && dropdownContent) {
+    // Toggle the dropdown content when clicking the button
+    dropdownButton.addEventListener("click", () => {
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+
+    // Close the dropdown when clicking outside of it
+    document.addEventListener("click", (event) => {
+      if (event.target !== dropdownButton && event.target !== dropdownContent) {
+        dropdownContent.style.display = "none";
+      }
+    });
+  }
+</script>
