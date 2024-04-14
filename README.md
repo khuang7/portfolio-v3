@@ -2,7 +2,9 @@
 
 ## 🚀 Project Structure
 
-This projects was built with Astro and TailwindCss. Astro is pretty neat, and a nice way to make nice performant static websites like mine. The cool thing about Astro is that there is an automatic tailwind and react integration which made my life super easy
+This projects was built with Astro and TailwindCss. Astro is pretty neat, and a nice way to make nice performant static websites like mine. The cool thing about Astro is that there is an automatic tailwind and react integration which made my life super easy.
+
+This website is currently hosted on Vercel (easiest DX personally)
 
 
 ## 🧞 Commands to run this locally
