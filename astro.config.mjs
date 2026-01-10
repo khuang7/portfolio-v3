@@ -6,5 +6,8 @@ import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), mdx()]
+  integrations: [react(), tailwind(), mdx()],
+  server: {
+    host: true // Allows access from WSL to Windows host
+  }
 });
