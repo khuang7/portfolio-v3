@@ -1,0 +1,70 @@
+---
+title: Wedding RSVP Website
+publishDate: 2026-01-01 00:00:00
+img: assets/weddingrsvp_homepage.png
+img_alt: Wedding Website Homepage
+description: |
+  A modern wedding RSVP platform built with Cloudflare Workers
+tags:
+  - React
+  - Cloudflare Workers
+  - Airtable
+  - Wedding
+link: https://your-wedding-site.com
+---
+
+import Title from "~/components/markdown-components/Title.astro";
+import Paragraph from "~/components/markdown-components/Paragraph.astro";
+import Image from "~/components/markdown-components/Image.astro";
+import ImageLink from "~/components/markdown-components/ImageLink.astro";
+
+<Title text="Wedding RSVP Website" />
+
+<Paragraph
+  text={
+    "Why pay for a wedding website when I could just do it myself? Words that I sort of regret saying because there are a lot of things to consider. But this was a fun website to make!"
+  }
+/>
+
+<Image
+  imageSrc={`../assets/weddingrsvp_homepage.png`}
+  imageAlt={"Wedding Website Homepage"}
+/>
+
+<Paragraph
+  text={
+    "A fully custom wedding website featuring a beautiful landing page and comprehensive RSVP system. Built to handle guest management, dietary restrictions, and plus-ones."
+  }
+/>
+
+<Image
+  imageSrc={`../assets/weddingrsvp_page.png`}
+  imageAlt={"Wedding Website Details"}
+/>
+
+<Title text="RSVP System" />
+
+<Paragraph
+  text={
+    "The RSVP system features a multi-step form that validates guest codes, collects dietary preferences, and manages plus-ones. Built with React for the frontend and powered by Cloudflare Workers for serverless backend logic."
+  }
+/>
+
+<Image
+  imageSrc={`../assets/weddingrsvp_rsvp.png`}
+  imageAlt={"Wedding RSVP Form"}
+/>
+
+<Title text="Tech Stack & Architecture" />
+
+<Paragraph
+  text={
+    "Leveraging Cloudflare Workers for edge computing, the application processes RSVP submissions. Data is stored in Airtable for easy management. The entire site is deployed on Cloudflare Pages with automatic deployments from Git."
+  }
+/>
+
+<Paragraph
+  text={
+    "Key features include: guest code validation, dynamic form fields based on guest type (ceremony + reception vs reception-only), dietary restriction tracking, and automated email confirmations."
+  }
+/>
